@@ -167,6 +167,8 @@ a, a:focus, a:hover {
                 line-height: 40px;
             }
             i {
+                position: relative;
+                top:1px;
                 font-size: 13px;
                 color: rgba(0, 0, 0, 0.3);
             }

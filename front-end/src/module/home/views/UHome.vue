@@ -36,26 +36,26 @@
         </el-col>
       </el-row>
       <el-row justify="center" :gutter="50">
-        <el-col v-for="i in 3" :span="6">
+        <el-col v-for="item in courses" :span="6">
           <transition name="fade-transform" mode="out-in">
-            <div class="single-popular-course" v-show="showCourses">
-              <img :src="require('@/assets/img/bg-img/c1.jpg')" alt="">
+            <div class="single-popular-course mb-80" v-show="showCourses">
+              <img :src="item.imgUrl" alt="">
               <div class="course-content">
-                <h4>英语语法</h4>
+                <h4>{{item.title}}</h4>
                 <div class="meta d-flex align-items-center">
-                  <a href="#">Tanma</a>
+                  <a href="#">{{item.author}}</a>
                   <span></span>
-                  <a href="#">艺术 &amp; 设计</a>
+                  <a href="#">{{ item.type }}</a>
                 </div>
-                <p>7天搞定英语语法，一线名师带你突破英语基础语法困境，扎实提升。</p>
+                <p>{{item.introduce}}</p>
               </div>
               <div class="seat-rating-fee d-flex justify-content-between">
                 <div class="seat-rating h-100 d-flex align-items-center">
                   <div class="seat">
-                    <i class="el-icon-user-solid" aria-hidden="true"></i> 10
+                    <i><el-icon><User /></el-icon></i> 10
                   </div>
                   <div class="rating">
-                    <i class="el-icon-star-on" aria-hidden="true"></i> 4.5
+                    <i><el-icon><StarFilled /></el-icon></i> 4.5
                   </div>
                 </div>
                 <div class="course-fee h-100">
@@ -99,8 +99,31 @@ export default {
           num:300,
           title:'课程数'
         },
+      ],
+      courses:[
+        {
+          title:'英语语法',
+          author:'Tanma',
+          type:'艺术 & 设计',
+          introduce:'7天搞定英语语法，一线名师带你突破英语基础语法困境，扎实提升',
+          imgUrl:require('@/assets/img/bg-img/c1.jpg')
+        },
+        {
+          title:'词汇',
+          author:'Tanma',
+          type:'艺术 & 设计',
+          introduce:'专业英语词汇培训辅导班，系统方法帮您高效提升英语词汇培训成绩',
+          imgUrl:require('@/assets/img/bg-img/c2.jpg')
+        },
+        {
+          title:'说明文写作',
+          author:'Tanma',
+          type:'艺术 & 设计',
+          introduce:'精选辅导教程，训练学生阅读和写作说明文的能力',
+          imgUrl:require('@/assets/img/bg-img/c3.jpg')
+        }
       ]
-      //此处尝试了直接src，绑定式src但是没有使用@,仅使用@可用
+
     }
   },
   created() {
