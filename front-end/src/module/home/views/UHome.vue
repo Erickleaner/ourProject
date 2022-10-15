@@ -67,14 +67,17 @@
         </el-col>
       </el-row>
     </div>
+    <u-footer></u-footer>
   </div>
 </template>
 
 <script>
 import {CountTo} from 'vue3-count-to'
+import UFooter from "@/views/common/Footer/UFooter";
 export default {
   name: "UHome",
   components:{
+    UFooter,
     CountTo
   },
   data(){

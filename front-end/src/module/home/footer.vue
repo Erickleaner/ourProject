@@ -176,7 +176,7 @@ export default {
       width: 216px;
       z-index: 2;
       padding-top: 260px;
-      background-image: url("static/img/core-img/qq.png");
+      background-image: url("../../../static/img/core-img/qq.png");
       background-repeat: no-repeat;
       background-position: top;
       text-align: center;
@@ -189,7 +189,7 @@ export default {
       z-index: 2;
       padding-top: 260px;
       color: #ffffff;
-      background-image: url("static/img/core-img/qq_new.png");
+      background-image: url("../../../static/img/core-img/qq_new.png");
       background-repeat: no-repeat;
       background-position: top;
       text-align: center;
