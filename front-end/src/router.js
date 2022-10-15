@@ -10,10 +10,15 @@ const routes = [
         redirect: '/home',
         children: [
             {
-                path: 'home',
+                path: '/home',
                 name: 'home',
                 component: () => import('@/module/home/views/UHome')
             },
+            {
+                path: '/login',
+                name: 'login',
+                component: () => import('@/module/login/views/ULogin')
+            }
         ]
     },
     {

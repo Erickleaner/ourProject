@@ -27,7 +27,7 @@
         </el-col>
       </el-row>
     </div>
-    <div class="popular-courses-area padding-80-0">
+    <div class="popular-courses-area">
       <el-row justify="center" :gutter="50">
         <el-col span="24">
           <div class="section-heading">
@@ -73,7 +73,7 @@
 
 <script>
 import {CountTo} from 'vue3-count-to'
-import UFooter from "@/views/common/Footer/UFooter";
+import UFooter from "@/views/common/footer/UFooter";
 export default {
   name: "UHome",
   components:{

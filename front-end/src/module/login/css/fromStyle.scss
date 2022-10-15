@@ -1,0 +1,113 @@
+#bg_svg {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.bg {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.login-wrap {
+  width: 330px;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  background: #ffffff;
+  color: #71767a;
+  .el-tabs__item {
+    font-size: 20px;
+  }
+  .el-tabs__nav {
+    left: 30%;
+  }
+  .login-code-img {
+    margin-left: 10px;
+    width: 110px;
+    height: 40px;
+  }
+  /* 注册登录 */
+  .login-wrap-title {
+    color: #71767a;
+    margin: 0 15px;
+    cursor: pointer;
+    line-height: 24px;
+    border-bottom: 2px solid transparent;
+  }
+  .el-form-item {
+    margin-bottom: 20px !important;
+  }
+  h3 {
+    text-align: center;
+    color: #ebedef;
+    margin-top: 0;
+    margin-bottom: 5px;
+    span {
+      color: #20a0ff;
+    }
+  }
+  form {
+    margin-top: 25px;
+    .el-form-item {
+      margin-bottom: 15px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #1f2d3d;
+  }
+  button {
+    width: 100%;
+    font-weight: 600;
+  }
+}
+.forgot-suffix {
+  right: 12px;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  color: #595959;
+  line-height: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  .forgot-link {
+    font-size: 14px;
+    border-left: 1px solid #e8e8e8;
+    padding-left: 12px;
+    padding-right: 5px;
+    a {
+      color: #8c8c8c;
+    }
+  }
+}
+.third-login {
+  position: relative;
+  margin-top: 20px;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 20px;
+  span.wechat {
+    background-position: 0 -41.5px;
+  }
+}
+.third-link {
+  display: flex;
+}
+.third-login span {
+  display: inline-block;
+  width: 20px;
+  height: 21px;
+  background: url("../../../static/img/login/third-login.png") no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.sms-code-input {
+  width: 55%;
+}
+.sms-code-send {
+  width: 40% !important;
+  margin-left: 10px;
+}

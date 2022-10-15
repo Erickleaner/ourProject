@@ -1,0 +1,42 @@
+.header-area{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    z-index: 1500 !important;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.nav-brand {
+    line-height: 70px;
+    height: 70px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.nav-brand, .nav-brand:focus, .nav-brand:hover {
+    color: #565656;
+}
+.between-arrange{
+    display: flex;
+    justify-content: space-between;
+}
+.horizontal-arrange{
+    width: auto;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+}
+.el-menu-demo{
+    width: auto;
+    height: 70px;
+    line-height: 70px;
+}
+.link-two a{
+    height: 70px;
+    line-height: 70px;
+    padding: 10px 20px;
+    margin: 0px 3px;
+}
+.link-two a:hover{
+    background-color: #D7E0FC;
+}
