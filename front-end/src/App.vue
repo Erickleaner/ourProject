@@ -1,6 +1,8 @@
 <template>
   <router-view>
   </router-view>
+  <!--来自WCT!!!-->
+
 </template>
 
 <script>
